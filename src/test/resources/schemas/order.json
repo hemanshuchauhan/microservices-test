@@ -1,0 +1,205 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "name",
+    "sku",
+    "shipTo",
+    "billTo"
+  ],
+  "properties": {
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The Name Schema",
+      "default": "",
+      "examples": [
+        "Leanne Graham"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "sku": {
+      "$id": "#/properties/sku",
+      "type": "string",
+      "title": "The Sku Schema",
+      "default": "",
+      "examples": [
+        "ssse"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "shipTo": {
+      "$id": "#/properties/shipTo",
+      "type": "object",
+      "title": "The Shipto Schema",
+      "required": [
+        "street",
+        "suite",
+        "city",
+        "zipcode",
+        "geo"
+      ],
+      "properties": {
+        "street": {
+          "$id": "#/properties/shipTo/properties/street",
+          "type": "string",
+          "title": "The Street Schema",
+          "default": "",
+          "examples": [
+            "Kulas Light"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "suite": {
+          "$id": "#/properties/shipTo/properties/suite",
+          "type": "string",
+          "title": "The Suite Schema",
+          "default": "",
+          "examples": [
+            "Apt. 556"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "city": {
+          "$id": "#/properties/shipTo/properties/city",
+          "type": "string",
+          "title": "The City Schema",
+          "default": "",
+          "examples": [
+            "Gwenborough"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "zipcode": {
+          "$id": "#/properties/shipTo/properties/zipcode",
+          "type": "string",
+          "title": "The Zipcode Schema",
+          "default": "",
+          "examples": [
+            "92998-3874"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "geo": {
+          "$id": "#/properties/shipTo/properties/geo",
+          "type": "object",
+          "title": "The Geo Schema",
+          "required": [
+            "lat",
+            "lng"
+          ],
+          "properties": {
+            "lat": {
+              "$id": "#/properties/shipTo/properties/geo/properties/lat",
+              "type": "string",
+              "title": "The Lat Schema",
+              "default": "",
+              "examples": [
+                "-37.3159"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "lng": {
+              "$id": "#/properties/shipTo/properties/geo/properties/lng",
+              "type": "string",
+              "title": "The Lng Schema",
+              "default": "",
+              "examples": [
+                "81.1496"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        }
+      }
+    },
+    "billTo": {
+      "$id": "#/properties/billTo",
+      "type": "object",
+      "title": "The Billto Schema",
+      "required": [
+        "street",
+        "suite",
+        "city",
+        "zipcode",
+        "geo"
+      ],
+      "properties": {
+        "street": {
+          "$id": "#/properties/billTo/properties/street",
+          "type": "string",
+          "title": "The Street Schema",
+          "default": "",
+          "examples": [
+            "Kulas Light"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "suite": {
+          "$id": "#/properties/billTo/properties/suite",
+          "type": "string",
+          "title": "The Suite Schema",
+          "default": "",
+          "examples": [
+            "Apt. 556"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "city": {
+          "$id": "#/properties/billTo/properties/city",
+          "type": "string",
+          "title": "The City Schema",
+          "default": "",
+          "examples": [
+            "Gwenborough"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "zipcode": {
+          "$id": "#/properties/billTo/properties/zipcode",
+          "type": "string",
+          "title": "The Zipcode Schema",
+          "default": "",
+          "examples": [
+            "92998-3874"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "geo": {
+          "$id": "#/properties/billTo/properties/geo",
+          "type": "object",
+          "title": "The Geo Schema",
+          "required": [
+            "lat",
+            "lng"
+          ],
+          "properties": {
+            "lat": {
+              "$id": "#/properties/billTo/properties/geo/properties/lat",
+              "type": "string",
+              "title": "The Lat Schema",
+              "default": "",
+              "examples": [
+                "-37.3159"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "lng": {
+              "$id": "#/properties/billTo/properties/geo/properties/lng",
+              "type": "string",
+              "title": "The Lng Schema",
+              "default": "",
+              "examples": [
+                "81.1496"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

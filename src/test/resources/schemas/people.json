@@ -1,0 +1,213 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "name",
+    "height",
+    "mass",
+    "hair_color",
+    "skin_color",
+    "eye_color",
+    "birth_year",
+    "gender",
+    "homeworld",
+    "films",
+    "species",
+    "vehicles",
+    "starships",
+    "created",
+    "edited",
+    "url"
+  ],
+  "properties": {
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The Name Schema",
+      "default": "",
+      "examples": [
+        "Luke Skywalker"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "height": {
+      "$id": "#/properties/height",
+      "type": "string",
+      "title": "The Height Schema",
+      "default": "",
+      "examples": [
+        "172"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "mass": {
+      "$id": "#/properties/mass",
+      "type": "string",
+      "title": "The Mass Schema",
+      "default": "",
+      "examples": [
+        "77"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "hair_color": {
+      "$id": "#/properties/hair_color",
+      "type": "string",
+      "title": "The Hair_color Schema",
+      "default": "",
+      "examples": [
+        "blond"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "skin_color": {
+      "$id": "#/properties/skin_color",
+      "type": "string",
+      "title": "The Skin_color Schema",
+      "default": "",
+      "examples": [
+        "fair"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "eye_color": {
+      "$id": "#/properties/eye_color",
+      "type": "string",
+      "title": "The Eye_color Schema",
+      "default": "",
+      "examples": [
+        "blue"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "birth_year": {
+      "$id": "#/properties/birth_year",
+      "type": "string",
+      "title": "The Birth_year Schema",
+      "default": "",
+      "examples": [
+        "19BBY"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "gender": {
+      "$id": "#/properties/gender",
+      "type": "string",
+      "title": "The Gender Schema",
+      "default": "",
+      "examples": [
+        "male"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "homeworld": {
+      "$id": "#/properties/homeworld",
+      "type": "string",
+      "title": "The Homeworld Schema",
+      "default": "",
+      "examples": [
+        "https://swapi.co/api/planets/1/"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "films": {
+      "$id": "#/properties/films",
+      "type": "array",
+      "title": "The Films Schema",
+      "items": {
+        "$id": "#/properties/films/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/films/2/",
+          "https://swapi.co/api/films/6/",
+          "https://swapi.co/api/films/3/",
+          "https://swapi.co/api/films/1/",
+          "https://swapi.co/api/films/7/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "species": {
+      "$id": "#/properties/species",
+      "type": "array",
+      "title": "The Species Schema",
+      "items": {
+        "$id": "#/properties/species/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/species/1/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "vehicles": {
+      "$id": "#/properties/vehicles",
+      "type": "array",
+      "title": "The Vehicles Schema",
+      "items": {
+        "$id": "#/properties/vehicles/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/vehicles/14/",
+          "https://swapi.co/api/vehicles/30/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "starships": {
+      "$id": "#/properties/starships",
+      "type": "array",
+      "title": "The Starships Schema",
+      "items": {
+        "$id": "#/properties/starships/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/starships/12/",
+          "https://swapi.co/api/starships/22/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "created": {
+      "$id": "#/properties/created",
+      "type": "string",
+      "title": "The Created Schema",
+      "default": "",
+      "examples": [
+        "2014-12-09T13:50:51.644000Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "edited": {
+      "$id": "#/properties/edited",
+      "type": "string",
+      "title": "The Edited Schema",
+      "default": "",
+      "examples": [
+        "2014-12-20T21:17:56.891000Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "url": {
+      "$id": "#/properties/url",
+      "type": "string",
+      "title": "The Url Schema",
+      "default": "",
+      "examples": [
+        "https://swapi.co/api/people/1/"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
