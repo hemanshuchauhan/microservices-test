@@ -1,4 +1,4 @@
-# springboot-cucumber-demo
+# Springboot-cucumber-demo
 
 BDD - Java - Maven based integration testing using Cucumber and Rest Assured.
 
