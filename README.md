@@ -2,7 +2,7 @@
 
 BDD - Java - Maven based integration testing using Cucumber and Rest Assured.
 
-## Objective
+## Objective.
 
 * Create a reference implementation which provides the best practices of running integration & component tests in a SpringBoot application
 * While Rest Assured provides an excellent DSL to quickly create component and integration tests , using Cucumber will provide us a not only creating readable and maintainable code , but also being able communicate the requirements across various stakeholdes in a human readable language.
